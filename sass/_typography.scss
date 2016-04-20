@@ -1,0 +1,78 @@
+$font-body: 	400 18px/24px 'Open Sans', sans-serif;
+$font-h1: 		700 28px/34px 'Open Sans', sans-serif;
+$orange:		#f15a24;
+$mid-orange:	#d84f2e;
+$dark-orange: 	#c14629;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+body {
+	color: #fff;
+	background-color: $orange;
+	font: $font-body;
+}
+
+h1 {
+	font: $font-h1;
+	bottom: 20px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p,ol,ul {
+	margin-bottom: 20px;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+i, emphasis {
+	font-style: italic;
+}
+
+small {
+	font-variant: small-caps;
+	font-size: 20px;
+}
+
+a:link, a:visited {
+	color: #fff;
+}
+
+a:hover {}
+
+input, textarea {
+	font: $font-body;
+}
+
+input[type="submit"] {
+	font: $font-body;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: $dark-orange;
+}
+
+hr {}
+
+img {}
+
+/**********************/
+
+#signup_footer {
+	font-size: 12px;
+	line-height: 12px;
+	background-color: $mid-orange;
+}
