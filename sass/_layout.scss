@@ -35,6 +35,10 @@
 	display: inline;
 }
 
+.input-group ul li label.disabled {
+	opacity: 0.75;
+}
+
 input[type="text"], input[type="email"],input[type="submit"] {
 	cursor: pointer;
 	display: block;
