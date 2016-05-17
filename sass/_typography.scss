@@ -52,7 +52,7 @@ a:link, a:visited {
 
 a:hover {}
 
-input, textarea {
+input, textarea, select {
 	font: $font-body;
 }
 
@@ -68,11 +68,3 @@ input[type="submit"] {
 hr {}
 
 img {}
-
-/**********************/
-
-#signup_footer {
-	font-size: 12px;
-	line-height: 12px;
-	background-color: $mid-orange;
-}
