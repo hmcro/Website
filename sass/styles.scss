@@ -1,3 +1,37 @@
 @import "reset";
 @import "typography";
 @import "layout";
+
+.fixed_footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 20px;
+	font-size: 12px;
+	line-height: 12px;
+	background-color: $mid-orange;
+}
+
+.fixed_footer #copy {
+	float: left;
+	margin-bottom: 0;
+}
+
+.fixed_footer #info {
+	float:right;
+	text-align: right;
+	margin-bottom: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.input-group ul li {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 49%;
+	display: inline-block;
+}
