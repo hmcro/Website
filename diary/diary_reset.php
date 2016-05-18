@@ -4,6 +4,6 @@
 unset( $_COOKIE['CID'] );
 setcookie('CID', '', time() - 3600);
 
-header('Location: index.php');
+header('Location: /diary');
 
 ?>
