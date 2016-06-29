@@ -65,6 +65,11 @@ input[type="submit"] {
 	background-color: $dark-orange;
 }
 
-hr {}
+hr {
+	border: none;
+	border-bottom: 2px solid #fff;
+	padding-top: 3em;
+	margin-bottom: 4em;
+}
 
 img {}

@@ -150,7 +150,7 @@
 
 			<main id="content">
 
-				<img src="../img/HMCRO_LOGO_WHITE.svg" alt="HM Citizen Rotation Office Logo" class="logo" />
+				<a href="/diary"><img src="../img/HMCRO_LOGO_WHITE.svg" alt="HM Citizen Rotation Office Logo" class="logo" /></a>
 
 				<h1>Citizen diary<?php if (isset($cid)) { echo ' for ' . $citizen_fname; } ?>.</h1>
 
@@ -179,7 +179,7 @@
 
 		<footer class="fixed_footer">
 			<span id="copy">HM Citizen Rotation Office</span>
-			<span id="info"><?php if(isset($cid)) {?><a href="diary_reset.php">Not <?php echo($citizen_fname); ?></a> | <?php }; ?><a href="mailto:office@hmcro.org">Contact</a></span>
+			<span id="info"><?php if(isset($cid)) {?><a href="diary_reset.php">Not <?php echo($citizen_fname); ?></a> | <a href="diary_list.php?CID=<?php echo($cid); ?>">Previous entries</a> | <?php }; ?><a href="mailto:office@hmcro.org">Contact</a></span>
 		</footer>
 
 		<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
