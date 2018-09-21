@@ -1,0 +1,110 @@
+@import "normalize";
+
+$padding: 1em;
+$border: 1px solid #ffffff;
+$shadow: -3px 4px #802100;
+
+/**
+# SHARED STYLES
+**/
+
+html, body {
+	height: 100vh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #E9501E;
+	color: #ffffff;
+	font-size: 10pt;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: inherit;
+}
+
+.logo {
+	max-width: 150px;
+}
+
+.button {
+	display: block;
+	background-color: #AF2C00;
+	border: none;
+	width: 100%;
+	margin: .2em 0;
+	padding: 15px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+
+	&:disabled {
+		opacity: .5;
+	}
+}
+
+/**
+* NO JAVASCRIPT
+**/
+
+.page {
+	display: none;
+}
+
+#js-error {
+	padding-top: 45vh;
+	text-align: center;
+}
+
+.js #js-error {
+	display: none;
+}
+
+#welcome {
+	
+	height: 100vh;
+	padding: $padding;
+
+	.welcome-inner {
+		padding: $padding 0;
+		height: 100%;
+		border-top: $border;
+		border-bottom: $border;
+
+		.welcome-text {
+			margin-top: 3em;
+			width: 75%;
+		}
+
+		.welcome-buttons {
+			position: absolute;
+			left: $padding;
+			right: $padding;
+			bottom: $padding *2;
+
+			text-align: center;
+		}
+	}
+}
+
+/**
+* DESKTOP
+**/
+
+@media only screen and (min-device-width: 1024px) {
+	body {
+		font-size: 15pt;
+	}
+
+	.button {
+		// max-width: 500px;
+		// margin-left: auto;
+		// margin-right: auto;
+	}
+}
