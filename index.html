@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Each citizen must complete their localisation tour</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="player">
+            <h2>Playing {{audioName}}.mp3</h2>
+            <button v-on:click="toggleAudio()">
+                <span v-if="isPlaying">Stop</span>
+                <span v-else>Play</span>
+            </button>
+            {{currentTime}}s/{{totalTime}}s ({{progress}}%)
+        </div>
+        
+        <ul>
+            <li v-for="file in files">
+                <a v-on:click="playAudio(file.name)" class="audioLink">{{file.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/app-min.js"></script>
+</body>
+</html>
