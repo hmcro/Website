@@ -9,13 +9,6 @@
 	],
 "creatorBuild": "26680",
 "files": {
-	"\/build\/inde.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/build\/inde.html",
-		"oF": 0
-		},
 	"\/css\/_normalize.scss": {
 		"aP": 0,
 		"bl": 0,
